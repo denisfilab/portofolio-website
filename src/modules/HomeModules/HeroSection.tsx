@@ -10,7 +10,7 @@ const HeroSection = () => {
         <section className="relative w-full h-screen flex flex-row max-custom:flex-col max-custom:h-fit items-center max-custom:items-start">
             <div className="flex flex-col w-[60%] max-custom:w-[90%] mb-5 max-custom:mt-[8rem] z-10 ">
                 <h1 className="text-white font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw] leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3] ">
-                    Hola!<br className=""></br>I'm Denis
+                    Hola!<br className=""></br>I&apos;m Denis
                 </h1>
                 <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3]">Frontend Dev</h1>
                 <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3]">AI Enthusiast</h1>
