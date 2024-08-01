@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { RefObject } from 'react'
 import Image from 'next/image'
 import SeeMyWork from './elements/SeeMyWork';
-import CountUp from 'react-countup'
 
+interface HeroSectionProps {
+    scrollToRef: RefObject<HTMLDivElement>;
+}
 
-
-const HeroSection = () => {
+const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
     return (
         <section className="relative w-full h-screen flex flex-row max-custom:flex-col max-custom:h-fit items-center max-custom:items-start">
             <div className="flex flex-col w-[60%] max-custom:w-[90%] mb-5 max-custom:mt-[8rem] z-10 ">
@@ -16,7 +17,7 @@ const HeroSection = () => {
                 <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3]">AI Enthusiast</h1>
                 <div className="absolute z-[1] w-[50%] h-[80%] rounded-full white__gradient bottom-40 -left-[100rem] inset-6" />
                 <div className='absolute left-[30rem] max-xl:left-[23rem] max-xl:top-[10rem] max-[547px]:hidden'>
-                    <SeeMyWork />
+                    <SeeMyWork scrollToRef={scrollToRef} />
                 </div>
             </div>
             {/* <div className='absolute w-[800px] z-10 right-[4rem] top-[20rem]'>

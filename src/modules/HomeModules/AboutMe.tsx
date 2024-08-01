@@ -4,9 +4,11 @@ import Button from './elements/Button'
 import React, { useState, useEffect, useRef } from 'react'
 import CountUp from 'react-countup'
 
+interface AboutMeProps {
+    scrollToRef: RefObject<HTMLDivElement>;
+}
 
-
-const AboutMe = () => {
+const AboutMe = ({ scrollToRef }) => {
     const [isDoneCounting, setIsDoneCounting] = useState(false)
     const [startCounting, setStartCounting] = useState(false)
     const sectionRef = useRef(null)
