@@ -9,7 +9,7 @@ export default function Home() {
   const projectSectionRef = useRef<HTMLDivElement>(null);
 
   return (
-    <main className="w-screen h-fit px-[8vw] overflow-hidden max-custom:px-[8vw]">
+    <main className="w-screen max-w-[100%] h-fit px-[8vw] overflow-hidden max-custom:px-[8vw]">
       <HeroSection scrollToRef={projectSectionRef} />
       <AboutMe />
       <div ref={projectSectionRef}>

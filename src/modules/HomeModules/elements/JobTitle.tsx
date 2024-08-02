@@ -11,7 +11,7 @@ interface JobTitleProps {
 const JobTitle: React.FC<JobTitleProps> = ({ startDate, endDate, company, title, responsibilities }) => {
     return (
         <div className="flex flex-col">
-            <p className="font-normal text-[1vw] italic" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+            <p className="font-normal text-[1vw] max-lg:text-[2vw] max-md:text-[0.8rem] italic" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                 {startDate} - {endDate || 'Present'}
             </p>
             <h3 className="font-semibold text-[3vw] max-lg:text-[3.3vw] max-md:text-[1.8rem] text-white">{company}</h3>
