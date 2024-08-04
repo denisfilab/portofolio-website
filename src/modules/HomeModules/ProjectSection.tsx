@@ -22,7 +22,7 @@ const ProjectSection = () => {
                 title='Pokemon Card Generator'
                 description='I used the DALL-E 3 API for the Pokémon images, employing prompt engineering to maintain a consistent style across Pokémon generations. Each card has properties stored in JSON format, which are then uploaded to a Supabase database. To render the cards, I utilized the Python PIL library, and after rendering, the images are then uploaded to a Supabase bucket. The interactive elements are built with React. This project taught me a lot about asynchronous functions when calling multiple APIs and integrating different technologies to create cohesive, visually appealing designs.'
                 githubLink='https://github.com/denisfilab/gambling-mines-clone'
-                previewLink='https://gambling-mines-clone.vercel.app/'
+                previewLink='https://pokemon-generator-lime.vercel.app/generate'
                 previewText='Create It Yourself'
             />
             <Card
