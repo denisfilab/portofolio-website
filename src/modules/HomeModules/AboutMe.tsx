@@ -47,7 +47,7 @@ const AboutMe = () => {
                 <h2 className='text-white font-semibold text-5xl'>About Me</h2>
                 <p className='text-white font-light text-2xl mt-[1rem] w-[100%] max-lg:text-center max-lg:text-xl max-sm:text-[1.2rem]' style={{
                     color: 'rgba(255, 255, 255, 0.7)'
-                }}>Denis is a front-end developer passionate about machine learning and data science. He loves creating user-friendly web interfaces and exploring new AI technologies. Always eager to learn and improve, Denis combines his web development skills with his data interest to deliver innovative solutions. He proactively seeks opportunities to grow and take on new challenges.</p>
+                }}>I am a computer science student at the University of Indonesia with a deep interest in web development and data science. My current goal is to enhance my full-stack web development skills while also delving deeper into data science. Being mostly self-taught in both fields, I have developed a strong ability to learn new technologies quickly and effectively.</p>
                 <div className='flex flex-row lg:mt-[2.5rem] max items-center max-lg:mt-[2.5rem] max-custom:flex-col max-custom:gap-5'>
                     <Button className='text-lg py-4 px-6' href='https://s.team/y22/ftvvcjbf?l=english'>I LOVE GAMING</Button>
                     <h2 className="text-white text-5xl font-semibold ml-[5rem] max-custom:ml-0">

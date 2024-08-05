@@ -13,22 +13,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToRef }) => {
                 <h1 className="text-white font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw] leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3] ">
                     Hola!<br className=""></br>I&apos;m Denis
                 </h1>
-                <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3]">Frontend Dev</h1>
-                <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3]">AI Enthusiast</h1>
+                <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3] text-nowrap">Frontend Dev</h1>
+                <h1 className="text-gradient font-semibold text-8xl max-xl:text-7xl max-lg:text-6xl max-sm:text-[10vw]  leading-tight max-xl:leading-[1.2] max-lg:leading-[1.3] text-nowrap">AI Enthusiast</h1>
                 <div className="absolute z-[1] w-[50%] h-[80%] rounded-full white__gradient bottom-40 -left-[100rem] inset-6" />
                 <div className='absolute left-[30rem] max-xl:left-[23rem] max-xl:top-[10rem] max-[547px]:hidden'>
                     <SeeMyWork scrollToRef={scrollToRef} />
                 </div>
             </div>
-            {/* <div className='absolute w-[800px] z-10 right-[4rem] top-[20rem]'>
-                <Image
-                    src='/images/pokemon-hero.svg'
-                    width={0}
-                    height={0}
-                    alt='pokemon card'
-                    layout='responsive'
-                    className='absolute' />
-            </div> */}
             <div className='flex-1 flex justify-content items-center  my-10 max-custom:mt-[60vw]'>
                 <div className='absolute w-[45vw] max-custom:w-[85vw] right-0 max-custom:right-10'>
                     <Image

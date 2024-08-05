@@ -20,17 +20,17 @@ const ProjectSection = () => {
             <Card
                 imageSrc='/images/pokemon-project.png'
                 title='Pokemon Card Generator'
-                description='I used the DALL-E 3 API for the Pokémon images, employing prompt engineering to maintain a consistent style across Pokémon generations. Each card has properties stored in JSON format, which are then uploaded to a Supabase database. To render the cards, I utilized the Python PIL library, and after rendering, the images are then uploaded to a Supabase bucket. The interactive elements are built with React. This project taught me a lot about asynchronous functions when calling multiple APIs and integrating different technologies to create cohesive, visually appealing designs.'
-                githubLink='https://github.com/denisfilab/gambling-mines-clone'
+                description='I used the DALL-E 3 API for the Pokémon images, employing prompt engineering to maintain a consistent style across Pokémon generations. Each card has properties stored in JSON format, which are then uploaded to a Supabase database. To render the cards, I utilized the Python PIL library hosted on AWS EC2 instances, and after rendering, the images are then uploaded to a Supabase bucket. The interactive elements are built with React. This project taught me a lot about asynchronous functions when calling multiple APIs and integrating different technologies to create cohesive, visually appealing designs.'
+                githubLink='https://github.com/denisfilab/Pokemon-Generator'
                 previewLink='https://pokemon-generator-lime.vercel.app/generate'
                 previewText='Create It Yourself'
             />
             <Card
                 imageSrc='/images/face-recognition-project.png'
                 title='Face Recognition Model'
-                description='I used YOLOv8 to detect faces, extracting the images within the bounding boxes. These images are then sent to a previously trained Support Vector Classfier model to classify the faces. After classification, I used PIL to annotate the name of the person on the image. This entire process is hosted on a Python Flask server, and I created a web interface so that users can easily interact with and demonstrate the system.'
-                githubLink='https://github.com/denisfilab/gambling-mines-clone'
-                previewLink='https://gambling-mines-clone.vercel.app/'
+                description='I used YOLOv8 to detect faces, extracting the images within the bounding boxes. These images are then sent to a previously trained Support Vector Classfier model to classify the faces. After classification, I used PIL to annotate the name of the person on the image.'
+                githubLink='/error'
+                previewLink='/error'
                 previewText='Preview'
             />
 
