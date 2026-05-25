@@ -1,4 +1,5 @@
 import React, { RefObject } from 'react';
+import Image from 'next/image';
 
 interface SeeMyWorkProps {
     scrollToRef: RefObject<HTMLDivElement>;
@@ -19,7 +20,7 @@ const SeeMyWork: React.FC<SeeMyWorkProps> = ({ scrollToRef }) => {
                     <p className="font-poppins font-medium text-[18px] max-xl:w-[16px] leading-[23.4px]">
                         <span className="text-gradient">See</span>
                     </p>
-                    <img src='images/arrow-upp.svg' alt="arrow-up" className="w-[23px] h-[23px] max-xl:ml-[1rem] object-contain" />
+                    <Image src='/images/arrow-upp.svg' width={23} height={23} alt="arrow-up" className="h-[23px] w-[23px] max-xl:ml-[1rem] object-contain" />
                 </div>
                 <p className="font-medium text-[18px] max-xl:text-[16px] leading-[23.4px]">
                     <span className="text-gradient">My Work</span>

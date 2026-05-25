@@ -10,15 +10,15 @@ interface JobTitleProps {
 
 const JobTitle: React.FC<JobTitleProps> = ({ startDate, endDate, company, title, responsibilities }) => {
     return (
-        <div className="flex flex-col">
-            <p className="font-normal text-[1vw] max-lg:text-[2vw] max-md:text-[0.8rem] italic" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+        <div className="flex flex-col rounded-[18px] bg-black-gradient-2 px-7 py-6 shadow-[0_18px_70px_rgba(0,0,0,0.18)] max-sm:px-5">
+            <p className="font-normal text-sm italic" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                 {startDate} - {endDate || 'Present'}
             </p>
-            <h3 className="font-semibold text-[3vw] max-lg:text-[3.3vw] max-md:text-[1.8rem] text-white">{company}</h3>
-            <h3 className="font-semibold text-[2.5vw] max-lg:text-[2.8vw] max-md:text-[1.5rem] text-gradient mt-[0.2vw]">{title}</h3>
-            <ul className="list-none pl-5 text-[1.2vw] text-gradient max-lg:text-[1rem] max-md:text-[1rem]">
+            <h3 className="font-semibold text-[clamp(1.6rem,2.4vw,2.8rem)] leading-tight text-white mt-2 balance">{company}</h3>
+            <h4 className="font-semibold text-[clamp(1.1rem,1.6vw,1.7rem)] text-gradient mt-2">{title}</h4>
+            <ul className="list-none pl-0 mt-4 text-base leading-8 text-dimWhite">
                 {responsibilities.map((responsibility, index) => (
-                    <li key={index} className="gap-5 ml-[2vw] w-[80vw] before:content-['•'] before:mr-3 before:text-gradient">
+                    <li key={index} className="gap-5 before:content-['•'] before:mr-3 before:text-secondary">
                         {responsibility}
                     </li>
                 ))}

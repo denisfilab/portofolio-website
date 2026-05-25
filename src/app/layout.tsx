@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 
 
 export const metadata: Metadata = {
-  title: "Denis Portofolio",
-  description: "Take a look at my portofolio",
+  title: "Daanish Rahman | Portfolio",
+  description: "Engineering and data portfolio for Daanish Rahman.",
 };
 
 export default function RootLayout({

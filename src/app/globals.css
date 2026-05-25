@@ -16,6 +16,8 @@
 body {
 	background: #00040f;
 	font-family: "Poppins", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: geometricPrecision;
 }
 
 h1,
@@ -25,6 +27,32 @@ p,
 a,
 span {
 	font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	text-wrap: balance;
+}
+
+p {
+	text-wrap: pretty;
+}
+
+.balance {
+	text-wrap: balance;
+}
+
+.pretty {
+	text-wrap: pretty;
+}
+
+.tabular-nums {
+	font-variant-numeric: tabular-nums;
+}
+
+.image-outline {
+	outline: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .text-gradient {
