@@ -3,45 +3,38 @@ import type { Config } from "tailwindcss";
 const config: Config = {
 	content: [
 		"./src/app/**/*.{ts,tsx}",
-		"./components/**/*.{ts,tsx}",
-		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
-		"./modules/**/*.ts.tsx",
+		"./src/components/**/*.{ts,tsx}",
+		"./src/lib/**/*.{ts,tsx}",
+		"./src/modules/**/*.{ts,tsx}",
 	],
 	theme: {
 		extend: {
-			backgroundImage: {
-				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-				"gradient-conic":
-					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-			},
 			colors: {
-				primary: "#00040f",
-				secondary: "#00f6ff",
-				dimWhite: "rgba(255, 255, 255, 0.7)",
-				dimBlue: "rgba(9, 151, 124, 0.1)",
+				page: "var(--color-page)",
+				"page-soft": "var(--color-page-soft)",
+				surface: "var(--color-surface)",
+				"surface-muted": "var(--color-surface-muted)",
+				ink: "var(--color-ink)",
+				"ink-soft": "var(--color-ink-soft)",
+				"ink-muted": "var(--color-ink-muted)",
+				line: "var(--color-line)",
+				"line-strong": "var(--color-line-strong)",
+				accent: "var(--color-accent)",
+				"accent-strong": "var(--color-accent-strong)",
+				dark: "var(--color-dark)",
+				"dark-soft": "var(--color-dark-soft)",
 			},
 			fontFamily: {
-				poppins: ["Poppins", "sans-serif"],
+				sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
 			},
 			screens: {
-				custom: "818px",
 				xxs: "376px",
 				xs: "475px",
 				sm: "640px",
-				// => @media (min-width: 640px) { ... }
-
 				md: "768px",
-				// => @media (min-width: 768px) { ... }
-
 				lg: "1024px",
-				// => @media (min-width: 1024px) { ... }
-
 				xl: "1280px",
-				// => @media (min-width: 1280px) { ... }
-
 				"2xl": "1536px",
-				// => @media (min-width: 1536px) { ... }
 			},
 		},
 	},
